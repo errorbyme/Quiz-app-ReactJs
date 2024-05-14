@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  font-family: "Ubuntu Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  height: 100vh;
+  background-color: aliceblue;
+  display: grid;
+}
+.container hr {
+  height: 2px;
+  border: none;
+  background-color: gray;
+}
+.Q-box {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid gray;
+  padding: 10px 20px;
+}
+.Q-box h2 {
+  margin-bottom: 10px;
+  color: rgb(79, 79, 79);
+  font-size: 1rem;
+}
+.Q-box p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Q-box p strong {
+  margin: 0 4px;
+}
+.Q-box p img {
+  margin-left: 10px;
+}
+.Q-box ul li {
+  list-style-type: none;
+  color: rgb(79, 79, 79);
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.Q-box button {
+  font-family: "Ubuntu Sans", sans-serif;
+  align-self: center;
+  max-width: 150px;
+  width: 100%;
+  padding: 10px;
+  background-color: blueviolet;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
+.Q-box .index {
+  color: rgb(79, 79, 79);
+  margin: auto;
+  font-size: 1rem;
+}
+.Q-box .correctAns {
+  color: black !important;
+  background-color: #e3ffe3;
+}
+.Q-box .wrongAns {
+  color: black !important;
+  background-color: rgb(255, 212, 212);
+}
+@media screen and (max-width: 600px) {
+  .Q-box {
+    border: none;
+  }
+}
